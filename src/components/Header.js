@@ -7,11 +7,18 @@ const Header = () => {
     <div className="main">
       <nav>
         <span>
-          <img width="53" src={logo} alt="" />
+          <img width="53" src={logo} alt="logo" />
         </span>
         <div>
-          <button className="btn">English</button>
-          <button className="btn btn-red-sm">Sign In</button>
+          <select className="btn" aria-label="Default select example">
+            <option selected value="1">
+              English
+            </option>
+            <option value="2">Hindi</option>
+          </select>
+          <button type="button" className="btn btn-red-sm">
+            Sign In
+          </button>
         </div>
       </nav>
       <div className="box"></div>
@@ -23,7 +30,9 @@ const Header = () => {
         </span>
         <div className="hero-buttons">
           <input type="text" placeholder="Email Address" />
-          <button className="btn btn-red">Get Started &gt;</button>
+          <button className="btn btn-red" type="button">
+            Get Started &gt;
+          </button>
         </div>
       </div>
 
